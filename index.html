@@ -16,7 +16,7 @@
             <h3>Seleccione una receta</h3>
 
             <p>
-                <input type="text" placeholder="Buscar receta...">
+                <input type="text" placeholder="Buscar receta..." v-model="search">
             </p>
             <ul>
                 <li v-for="n in 10">
@@ -24,9 +24,9 @@
                 </li>
             </ul>
 
-            <button>Agregar nueva receta</button>
+            <button @click="show_add_receta = !show_add_receta">Agregar nueva receta</button>
 
-            <div>
+            <div v-show="show_add_receta">
                 <p>
                     <input type="text" placeholder="Id...">
                 </p>
@@ -48,12 +48,21 @@
                 <ul>
                     <li v-for="n in 4">Aqui va el ingrediente</li>
                 </ul>
-                <!-- me quede en el video 18 -->
+
             </div>
         </div>
 
         <div style="width: 50%; float: right;">
-            aqui va el detalle
+            <h3>Título de la receta</h3>
+            <h4>El chef de la receta</h4>
+            <h4>Ingredientes:</h4>
+            <ul>
+                <li v-for="n in 5">ingrediente</li>
+            </ul>
+
+            <p style="background: cadetblue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ex libero
+                nostrum temporibus, earum ab reprehenderit aut deleniti facere illum quisquam sint debitis ut obcaecati
+                delectus beatae maxime quod ducimus?</p>
         </div>
 
     </div>
