@@ -136,6 +136,20 @@ var vm= new Vue ({
             }
         ],
         search : '',
-        show_add_receta : false
+        show_add_receta : false,
+        new_receta: {
+            "id": "",
+            "nombre": "",
+            "descripcion": "",
+            "chef": "",
+            "ingredientes": []
+        },
+        nuevo_ingrediente: ''
+    },
+    methods: {
+        AgregarIngrediente: function () {
+            // new_receta.ingredientes.push()
+            console.log(this.nuevo_ingrediente)
+        }
     }
 })

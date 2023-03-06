@@ -28,25 +28,26 @@
 
             <div v-show="show_add_receta">
                 <p>
-                    <input type="text" placeholder="Id...">
+                    <input type="text" placeholder="Id..." v-model="new_receta.id">
                 </p>
                 <p>
-                    <input type="text" placeholder="Nombre...">
+                    <input type="text" placeholder="Nombre..." v-model="new_receta.nombre">
                 </p>
 
                 <p><label for="">Descripción</label></p>
-                <textarea cols="30" rows="10"></textarea>
+                <textarea v-model="new_receta.descripción" cols="30" rows="10"></textarea>
 
                 <p>
-                    <input type="text" placeholder="Chef...">
+                    <input type="text" placeholder="Chef..." v-model="new_receta.chef">
                 </p>
 
                 <p>
-                    <input type="text" placeholder="Agregar ingredientes...">
+                    <input type=" text" placeholder="Agregar ingredientes..." v-model="nuevo_ingrediente"
+                        @keyup.enter="AgregarIngrediente()">
                 </p>
 
                 <ul>
-                    <li v-for="n in 4">Aqui va el ingrediente</li>
+                    <li v-for="n in new_receta.ingredientes">Aqui va el ingrediente</li>
                 </ul>
 
             </div>
