@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas</title>
+</head>
+
+<body>
+    <div id="appReceta">
+        <h1>Libro de recetas</h1>
+
+        <div style="width: 50%; float: left;">
+            <h3>Seleccione una receta</h3>
+
+            <p>
+                <input type="text" placeholder="Buscar receta...">
+            </p>
+            <ul>
+                <li v-for="n in 10">
+                    <a href="#">Arroz con leche</a>
+                </li>
+            </ul>
+
+            <button>Agregar nueva receta</button>
+
+            <div>
+                <p>
+                    <input type="text" placeholder="Id...">
+                </p>
+                <p>
+                    <input type="text" placeholder="Nombre...">
+                </p>
+
+                <p><label for="">Descripción</label></p>
+                <textarea cols="30" rows="10"></textarea>
+
+                <p>
+                    <input type="text" placeholder="Chef...">
+                </p>
+
+                <p>
+                    <input type="text" placeholder="Agregar ingredientes...">
+                </p>
+
+                <ul>
+                    <li v-for="n in 4">Aqui va el ingrediente</li>
+                </ul>
+                <!-- me quede en el video 18 -->
+            </div>
+        </div>
+
+        <div style="width: 50%; float: right;">
+            aqui va el detalle
+        </div>
+
+    </div>
+
+
+    <!-- Import code vue -->
+    <script src="vue2.7.js"></script>
+    <script src="recetas.js"></script>
+</body>
+
+</html>
