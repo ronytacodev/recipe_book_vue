@@ -12,6 +12,7 @@
     <div id="appReceta">
         <h1>Libro de recetas</h1>
 
+        <!-- COLUMN LEFT -->
         <div style="width: 50%; float: left;">
             <h3>Seleccione una receta</h3>
 
@@ -19,7 +20,7 @@
                 <input type="text" placeholder="Buscar receta..." v-model="search">
             </p>
             <ul>
-                <li v-for="receta in lista_recetas" :key="receta.id">
+                <li v-for="receta in lista_recetas_filtrada" :key="receta.id">
                     <a href="#">{{receta.nombre}}</a>
                 </li>
             </ul>
@@ -51,9 +52,13 @@
                         {{ingrediente.nombre}}
                     </li>
                 </ul>
-
+                <p>
+                    <button @click="AgregarReceta()">Guardar</button>
+                </p>
             </div>
         </div>
+
+        <!-- COLUMN RIGHT -->
 
         <div style="width: 50%; float: right;">
             <h3>Título de la receta</h3>

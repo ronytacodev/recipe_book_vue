@@ -146,6 +146,16 @@ var vm= new Vue ({
         },
         nuevo_ingrediente: ''
     },
+    computed: {
+        lista_recetas_filtrada: function () {
+            var self = this
+            return this.lista_recetas.filter(
+                function (value) {  
+                    return value.nombre.includes(self.search)
+                }
+            )
+        }
+    },
     methods: {
         AgregarIngrediente: function () {
             // console.log(this.nuevo_ingrediente)
@@ -156,6 +166,10 @@ var vm= new Vue ({
             }
 
             this.new_receta.ingredientes.push(ingrediente)
+        },
+        AgregarReceta: function () {
+            this.lista_recetas.push(this.new_receta)
         }
+    
     }
 })
