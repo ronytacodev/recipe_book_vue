@@ -19,8 +19,8 @@
                 <input type="text" placeholder="Buscar receta..." v-model="search">
             </p>
             <ul>
-                <li v-for="n in 10">
-                    <a href="#">Arroz con leche</a>
+                <li v-for="receta in lista_recetas" :key="receta.id">
+                    <a href="#">{{receta.nombre}}</a>
                 </li>
             </ul>
 
@@ -47,7 +47,9 @@
                 </p>
 
                 <ul>
-                    <li v-for="n in new_receta.ingredientes">Aqui va el ingrediente</li>
+                    <li v-for="ingrediente in new_receta.ingredientes" :key="ingrediente.id">
+                        {{ingrediente.nombre}}
+                    </li>
                 </ul>
 
             </div>

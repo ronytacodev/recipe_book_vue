@@ -148,8 +148,14 @@ var vm= new Vue ({
     },
     methods: {
         AgregarIngrediente: function () {
-            // new_receta.ingredientes.push()
-            console.log(this.nuevo_ingrediente)
+            // console.log(this.nuevo_ingrediente)
+            var new_date = new Date()
+            var ingrediente = {
+                "id": "i1000" +  new_date.getTime(),
+                "nombre": this.nuevo_ingrediente
+            }
+
+            this.new_receta.ingredientes.push(ingrediente)
         }
     }
 })
