@@ -5,7 +5,7 @@ var vm= new Vue ({
             {
                 "id": "001",
                 "nombre": "Receta de Arroz con leche",
-                "descripción": "En una olla añadimos la taza de arroz con 2 tazas de agua, agregamos las cáscaras de  cáscaras de naranja, previamente hervidas, cambiándole el agua 5 veces para quitar el amargo de la cáscara de naranja. Le agregamos la canela y los 3 clavos de olor, dejamos que hierva hasta que el agua se consuma.Una vez que el arroz ya está seco, quitamos las cáscaras, la canela y los clavos de olor.Añadimos 1 taza de leche evaporada y dejamos que hierva siempre moviendo todo para asegurarnos de que el arroz no se pegue en el fondo de la olla repitiendo este paso cada 5 minutos.Pasado unos 20 minutos a fuego lento, añadimos 1 lata de leche condensada, dejando que se cocine por unos 10 minutos más.Apagamos el fuego y agregamos 1/2 taza de pasas rubias o negras remojadas en licor.Finalmente, añadimos 1 cucharadita de esencia de vainilla y listo, servimos al gusto espolvoreando canela en polvo para decorar.",
+                "descripcion": "En una olla añadimos la taza de arroz con 2 tazas de agua, agregamos las cáscaras de  cáscaras de naranja, previamente hervidas, cambiándole el agua 5 veces para quitar el amargo de la cáscara de naranja. Le agregamos la canela y los 3 clavos de olor, dejamos que hierva hasta que el agua se consuma.Una vez que el arroz ya está seco, quitamos las cáscaras, la canela y los clavos de olor.Añadimos 1 taza de leche evaporada y dejamos que hierva siempre moviendo todo para asegurarnos de que el arroz no se pegue en el fondo de la olla repitiendo este paso cada 5 minutos.Pasado unos 20 minutos a fuego lento, añadimos 1 lata de leche condensada, dejando que se cocine por unos 10 minutos más.Apagamos el fuego y agregamos 1/2 taza de pasas rubias o negras remojadas en licor.Finalmente, añadimos 1 cucharadita de esencia de vainilla y listo, servimos al gusto espolvoreando canela en polvo para decorar.",
                 "chef": "Isabel Rescalvo",
                 "ingredientes": [
                     {
@@ -41,7 +41,7 @@ var vm= new Vue ({
             {
                 "id": "002",
                 "nombre": "Receta de Mazamorra Morada",
-                "descripción": "Primero hierve, durante una 1 hora, un kilo de maíz morado en 4 litros de agua, 2 ramas de canela entera, 6 clavos de olor, además de cáscaras de una piña, melocotones, piñas y duraznos secos al gusto.Colocar el líquido y volver a poner el líquido a fuego lento, ahora agrega  150 gramos de azúcar, ½ taza de guindones, piña fresca en cuadraditos.Hierve a fuego lento hasta que la fruta esté cocida.En un recipiente coloca 1 litro de agua,100 gramos de maicena,100 gramos de chuño y disolver.Añade esta nueva mezcla a la olla mientras mueve todo con un cucharón, nuevamente agrega un jugo de limón sin dejar de mover. Ya está listo para servir, agrega canela molida espolvoreada.",
+                "descripcion": "Primero hierve, durante una 1 hora, un kilo de maíz morado en 4 litros de agua, 2 ramas de canela entera, 6 clavos de olor, además de cáscaras de una piña, melocotones, piñas y duraznos secos al gusto.Colocar el líquido y volver a poner el líquido a fuego lento, ahora agrega  150 gramos de azúcar, ½ taza de guindones, piña fresca en cuadraditos.Hierve a fuego lento hasta que la fruta esté cocida.En un recipiente coloca 1 litro de agua,100 gramos de maicena,100 gramos de chuño y disolver.Añade esta nueva mezcla a la olla mientras mueve todo con un cucharón, nuevamente agrega un jugo de limón sin dejar de mover. Ya está listo para servir, agrega canela molida espolvoreada.",
                 "chef": "Carla León",
                 "ingredientes": [
                     {
@@ -77,7 +77,7 @@ var vm= new Vue ({
             {
                 "id": "003",
                 "nombre": "Receta Crema volteada",
-                "descripción": "Primero haremos el caramelo en una olla a fuego medio poniendo 300 gr de azúcar blanca moviendo constantemente para que todo quede parejo y se disuelva por completo como un caramelo.Ahora vaciamos todo el caramelo en un molde nro 24 esparciéndolo por las paredes del molde y lo dejamos enfriarCalentamos el horno por 15 minutos a 170°.Ahora en un bol ponemos 1 litro de Leche fresca y 350 gr de azúcar.Luego colocamos los 15 Huevos batidos en el bol con la ayuda de un colador y 1 cucharada de esencia de Vainilla y lo movemos hasta que se disuelva el azúcar.Ahora vaciamos todo el contenido al molde y lo ponemos en el horno a baño maría es decir sobre una azafata con agua por 2 hora y 10 minutos dependiendo del horno pues no todos son iguales.Por último pasado el tiempo verificamos con un cuchillo si la crema volteada esta lista y lo dejamos enfriar por un día y ¡LISTO!",
+                "descripcion": "Primero haremos el caramelo en una olla a fuego medio poniendo 300 gr de azúcar blanca moviendo constantemente para que todo quede parejo y se disuelva por completo como un caramelo.Ahora vaciamos todo el caramelo en un molde nro 24 esparciéndolo por las paredes del molde y lo dejamos enfriarCalentamos el horno por 15 minutos a 170°.Ahora en un bol ponemos 1 litro de Leche fresca y 350 gr de azúcar.Luego colocamos los 15 Huevos batidos en el bol con la ayuda de un colador y 1 cucharada de esencia de Vainilla y lo movemos hasta que se disuelva el azúcar.Ahora vaciamos todo el contenido al molde y lo ponemos en el horno a baño maría es decir sobre una azafata con agua por 2 hora y 10 minutos dependiendo del horno pues no todos son iguales.Por último pasado el tiempo verificamos con un cuchillo si la crema volteada esta lista y lo dejamos enfriar por un día y ¡LISTO!",
                 "chef": "Maria Torres",
                 "ingredientes": [
                     {
@@ -101,7 +101,7 @@ var vm= new Vue ({
             {
                 "id": "004",
                 "nombre": "Receta de Pastel de Choclo Peruano",
-                "descripción": "Licue los choclos con la leche.Mezcle con la sal, el azúcar y la manteca.Aparte, bata las claras a punto nieve; agregue una a una las yemas y siga batiendo durante un minuto más.Añada el chuño y el polvo para hornear.Mezcle de forma envolvente con una espátula.Vierta esta mezcla sobre la masa de choclo y revuelva.Enmantequille un recipiente refractario rectangular y vierta la preparación anterior.Cubra con las tajadas de queso fresco y espolvoree el azúcar.Lleve al horno; a 180°C durante 45 minutos.Retire y sirva al gusto.",
+                "descripcion": "Licue los choclos con la leche.Mezcle con la sal, el azúcar y la manteca.Aparte, bata las claras a punto nieve; agregue una a una las yemas y siga batiendo durante un minuto más.Añada el chuño y el polvo para hornear.Mezcle de forma envolvente con una espátula.Vierta esta mezcla sobre la masa de choclo y revuelva.Enmantequille un recipiente refractario rectangular y vierta la preparación anterior.Cubra con las tajadas de queso fresco y espolvoree el azúcar.Lleve al horno; a 180°C durante 45 minutos.Retire y sirva al gusto.",
                 "chef": "Sofia Montesco",
                 "ingredientes": [
                     {
@@ -144,7 +144,8 @@ var vm= new Vue ({
             "chef": "",
             "ingredientes": []
         },
-        nuevo_ingrediente: ''
+        nuevo_ingrediente: '',
+        receta_seleccionada: null,
     },
     computed: {
         lista_recetas_filtrada: function () {
@@ -169,7 +170,10 @@ var vm= new Vue ({
         },
         AgregarReceta: function () {
             this.lista_recetas.push(this.new_receta)
+        },
+        SeleccionarReceta: function(receta) {
+            this.receta_seleccionada = receta
+            
         }
-    
     }
 })

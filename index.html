@@ -21,7 +21,7 @@
             </p>
             <ul>
                 <li v-for="receta in lista_recetas_filtrada" :key="receta.id">
-                    <a href="#">{{receta.nombre}}</a>
+                    <a href="#" @click="SeleccionarReceta(receta)">{{receta.nombre}}</a>
                 </li>
             </ul>
 
@@ -60,17 +60,16 @@
 
         <!-- COLUMN RIGHT -->
 
-        <div style="width: 50%; float: right;">
-            <h3>Título de la receta</h3>
-            <h4>El chef de la receta</h4>
+        <div style="width: 50%; float: right;" v-if="receta_seleccionada">
+            <h3>{{receta_seleccionada.nombre}}</h3>
+            <h4>{{receta_seleccionada.chef}}</h4>
             <h4>Ingredientes:</h4>
             <ul>
-                <li v-for="n in 5">ingrediente</li>
+                <li v-for="ingrediente in receta_seleccionada.ingredientes">{{ingrediente.nombre}}</li>
             </ul>
 
-            <p style="background: cadetblue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui ex libero
-                nostrum temporibus, earum ab reprehenderit aut deleniti facere illum quisquam sint debitis ut obcaecati
-                delectus beatae maxime quod ducimus?</p>
+            <h4>Descripción:</h4>
+            <p style="background: #C7E8CA; padding: 10px;">{{receta_seleccionada.descripcion}}</p>
         </div>
 
     </div>
