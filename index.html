@@ -6,45 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="appReceta">
-        <h1>Libro de recetas</h1>
+    <div class="container-recetas" id="appReceta">
+        <h1 class="container-recetas__title">Libro de recetas</h1>
 
         <!-- COLUMN LEFT -->
-        <div style="width: 50%; float: left;">
+        <div class="container-recetas__left">
             <h3>Seleccione una receta</h3>
-
+            <hr>
             <p>
-                <input type="text" placeholder="Buscar receta..." v-model="search">
+                <input class="container-recetas__left__search" type="text" placeholder="Buscar receta..."
+                    v-model="search">
             </p>
             <ul>
                 <li v-for="receta in lista_recetas_filtrada" :key="receta.id">
-                    <a href="#" @click="SeleccionarReceta(receta)">{{receta.nombre}}</a>
+                    <a class="container-recetas__left__list" href="#"
+                        @click="SeleccionarReceta(receta)">{{receta.nombre}}</a>
                 </li>
             </ul>
 
-            <button @click="show_add_receta = !show_add_receta">Agregar nueva receta</button>
+            <button class="container-recetas__left__btn-add" @click="show_add_receta = !show_add_receta">
+                Agregar nueva receta
+            </button>
 
             <div v-show="show_add_receta">
                 <p>
-                    <input type="text" placeholder="Id..." v-model="new_receta.id">
+                    <input class="container-recetas__left__input" type="text" placeholder="Id..."
+                        v-model="new_receta.id">
                 </p>
                 <p>
-                    <input type="text" placeholder="Nombre..." v-model="new_receta.nombre">
+                    <input class="container-recetas__left__input" type="text" placeholder="Nombre..."
+                        v-model="new_receta.nombre">
                 </p>
 
-                <p><label for="">Descripción</label></p>
-                <textarea v-model="new_receta.descripción" cols="30" rows="10"></textarea>
+                <h3><label for="">Descripción</label></h3>
+                <hr>
+                <textarea class="container-recetas__left__description" v-model="new_receta.descripción" cols="30"
+                    rows="10"></textarea>
 
                 <p>
-                    <input type="text" placeholder="Chef..." v-model="new_receta.chef">
+                    <input class="container-recetas__left__input" type="text" placeholder="Chef..."
+                        v-model="new_receta.chef">
                 </p>
 
                 <p>
-                    <input type=" text" placeholder="Agregar ingredientes..." v-model="nuevo_ingrediente"
-                        @keyup.enter="AgregarIngrediente()">
+                    <input class="container-recetas__left__input" type=" text" placeholder="Agregar ingredientes..."
+                        v-model="nuevo_ingrediente" @keyup.enter="AgregarIngrediente()">
                 </p>
 
                 <ul>
@@ -53,23 +63,31 @@
                     </li>
                 </ul>
                 <p>
-                    <button @click="AgregarReceta()">Guardar</button>
+                    <button class="container-recetas__left__btn-save" @click="AgregarReceta()">Guardar</button>
                 </p>
             </div>
         </div>
 
         <!-- COLUMN RIGHT -->
 
-        <div style="width: 50%; float: right;" v-if="receta_seleccionada">
-            <h3>{{receta_seleccionada.nombre}}</h3>
-            <h4>{{receta_seleccionada.chef}}</h4>
+        <div class="container-recetas__right" style="width: 50%; float: right;" v-if="receta_seleccionada">
+            <h3 class="container-recetas__right__title">{{receta_seleccionada.nombre}}</h3>
+
+            <div class="container-recetas__right__data-chef">
+                <h4>Chef:</h4>
+                <h4 class="container-recetas__right__data-chef__name">{{receta_seleccionada.chef}}</h4>
+            </div>
+
             <h4>Ingredientes:</h4>
+            <hr>
             <ul>
                 <li v-for="ingrediente in receta_seleccionada.ingredientes">{{ingrediente.nombre}}</li>
             </ul>
 
             <h4>Descripción:</h4>
-            <p style="background: #C7E8CA; padding: 10px;">{{receta_seleccionada.descripcion}}</p>
+            <hr>
+            <p class="container-recetas__right__description">
+                {{receta_seleccionada.descripcion}}</p>
         </div>
 
     </div>

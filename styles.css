@@ -1,0 +1,110 @@
+.container-recetas {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-recetas__title {
+    text-align: center;
+    background-color: #863A6F;
+    color: white;
+    padding: 10px;
+}
+
+/* column left */
+
+.container-recetas__left {
+    flex-direction: column;
+    background-color: #046582;
+    color: white;
+    padding: 1em;
+    width: 500px;
+    float: left;
+    margin-bottom: 1em;
+}
+
+.container-recetas__left__search {
+    padding: 15px 15px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container-recetas__left__input {
+    padding: 5px 10px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container-recetas__left__list {
+    color: #FDF1D6;
+}
+
+.container-recetas__left__btn-add {
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #FFE05D;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.container-recetas__left__description {
+    border-radius: 20px;
+    width: 90%;
+    padding: 1em;
+}
+
+.container-recetas__left__btn-save {
+    padding: 15px 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5D9C59;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.container-recetas__left__btn-save:focus {
+    background-color: #DFFFD8;
+    color: black;
+}
+
+/* column right */
+
+.container-recetas__right {
+    flex-direction: column;
+    background-color: #3C6255;
+    color: white;
+    padding: 1em;
+    width: 500px;
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.container-recetas__right__title {
+    font-size: 24px;
+    color: #FFF6BD;
+    text-align: center;
+}
+
+.container-recetas__right__data-chef {
+    display: flex;
+}
+
+.container-recetas__right__data-chef__name {
+    margin-left: 5px;
+}
