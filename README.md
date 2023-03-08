@@ -5,4 +5,4 @@ Code to create a book recipe using VUE 2.
 ## Screenshot
 ___
 
-![](book-recipe.jpg)
+![](bookRecipe.jpg)
